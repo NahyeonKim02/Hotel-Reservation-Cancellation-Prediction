@@ -20,15 +20,23 @@
 
 ---
 
+### 👨‍💻 예측 모델 만들기
+
+- 실질적인 예측 데이터를 활용하기 위해 Random Forest 예측 모델을 생성하였습니다.
+- ```rt_model.predict(X_ohe_new_adj)``` 코드를 통해 예측값을 도출했습니다.
+- 범주형 데이터(```room_type_reserved```, ```market_segment_type``` 등)를 머신러닝 모델이 처리할 수 있도록, 숫자 데이터로 변환하기 위해 One-hot-encoding을 적용하였습니다.
+
+---
+
 ### 💻 사용 Tool
-Python, Excel
+- Python (Jupyter Notebook)
+- Excel
 
 ---
 
 ### 📂 사용된 라이브러리
-
-- Pandas
 - NumPy
+- Pandas
 - Matplotlib
 - Scikit-learn
 - Imbalanced-learn
@@ -37,8 +45,8 @@ Python, Excel
 
 ### 🗂️ 데이터 설명
 
-- **데이터셋**: [hotel reservation_original.csv](https://www.kaggle.com/datasets/ahsan81/hotel-reservations-classification-dataset)
-- **타겟 변수**: ```booking_status```
+- **Dataset**: [hotel reservation_original.csv](https://www.kaggle.com/datasets/ahsan81/hotel-reservations-classification-dataset)
+- **Target Column**: ```booking_status```
 
 ---
 
@@ -48,20 +56,3 @@ Python, Excel
 - 정확도와 추가적인 성능 지표(Precision, Recall, F1-Score)는 결과 섹션도 함께 출력합니다.
 - 학습 곡선 분석 결과, 랜덤포레스트는 더 안정적이고 일반화 능력이 뛰어난 모델임을 확인할 수 있습니다.
 - ANOVA 분석을 통해 모델의 평균 성능도 검증 완료하였습니다.
-
----
-
-### 👨‍💻 예측 모델 만들기
-
-- 실질적인 예측 데이터를 활용하기 위해 Random Forest 예측 모델을 생성하였습니다.
-- ```rt_model.predict(X_ohe_new_adj)``` 코드를 통해 예측값을 도출했습니다.
-- 범주형 데이터(```room_type_reserved```, ```market_segment_type``` 등)를 머신러닝 모델이 처리할 수 있도록
-- 숫자 데이터로 변환하기 위해 One-hot-encoding을 적용하였습니다.
-
----
-
-### 📞 Contact
-
-제가 작업한 프로젝트나 제 소개가 마음에 드시면 언제든지 연락주세요!
-
-- **이메일**: [jenny0549@naver.com](mailto:jenny0549@naver.com)
